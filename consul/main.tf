@@ -25,7 +25,7 @@ terraform {
 module "consul" {
   # Ideally, we'd use a registry URL here like "hashicorp/consul/aws", but Registry URLs won't support versioning until
   # Terraform 0.11, so for now, we just fall back to a plain Git URL and use the ref param for versioning.
-  source = "git::git@github.com:hashicorp/terraform-aws-consul.git?ref=v0.0.5"
+  source = "git::git@github.com:hashicorp/terraform-aws-consul.git?ref=v0.7.9"
 
   aws_region   = "${var.aws_region}"
   cluster_name = "${var.cluster_name}"
