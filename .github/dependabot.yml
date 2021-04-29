@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: terraform
+  directory: "/consul"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: consul
+    versions:
+    - 0.8.4
+    - 0.8.5
+    - 0.8.6
+    - 0.9.0
